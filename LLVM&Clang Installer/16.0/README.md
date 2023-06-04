@@ -10,8 +10,12 @@ LLVM + Clang 16.0 发布啦，本脚本在之前LLVM + Clang 15.0 的构建脚�
 ## 编译脚本使用示例
 
 ```bash
+#安装新版cmake时提示找不到openssl时运行：
+sudo apt-get install libssl-dev
+#-V报错
 pcre2-config --version
 pcre-config --version
+#开始运行
 sudo -b env CC=/usr/local/gcc-12.2.0/bin/gcc CXX=/usr/local/gcc-12.2.0/bin/g++ nohup ./installer.sh
 sudo chmod 777 nohup.out && tail -f nohup.out;
 
