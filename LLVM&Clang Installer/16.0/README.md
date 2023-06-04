@@ -10,7 +10,9 @@ LLVM + Clang 16.0 发布啦，本脚本在之前LLVM + Clang 15.0 的构建脚�
 ## 编译脚本使用示例
 
 ```bash
-sudo -b env CC=/usr/local/gcc-12.2.0/gcc CXX=/usr/local/gcc-12.2.0/g++ nohup ./installer.sh
+pcre2-config --version
+pcre-config --version
+sudo -b env CC=/usr/local/gcc-12.2.0/bin/gcc CXX=/usr/local/gcc-12.2.0/bin/g++ nohup ./installer.sh
 sudo chmod 777 nohup.out && tail -f nohup.out;
 
 # 或者不需要root权限
