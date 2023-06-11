@@ -15,6 +15,8 @@ sudo apt-get install libssl-dev
 #-V报错
 pcre2-config --version
 pcre-config --version
+#PATH增加/usr/local/gcc-12.2.0/bin路径，以便构建脚本能找到zstd
+export PATH="/usr/local/gcc-12.2.0/bin:${PATH}"
 #开始运行
 sudo -b env CC=/usr/local/gcc-12.2.0/bin/gcc CXX=/usr/local/gcc-12.2.0/bin/g++ nohup ./installer.sh
 sudo chmod 777 nohup.out && tail -f nohup.out;
