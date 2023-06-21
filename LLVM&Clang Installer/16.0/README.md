@@ -11,7 +11,10 @@ LLVM + Clang 16.0 发布啦，本脚本在之前LLVM + Clang 15.0 的构建脚�
 
 ```bash
 #安装新版cmake时提示找不到openssl时运行：
+##libssl-dev是ubuntu系统的库，ubuntu系统运行
 sudo apt-get install libssl-dev
+## 而centos系统对应的是openssl-devel ，所以centos中运行
+yum install openssl-devel
 #-V报错
 pcre2-config --version
 pcre-config --version
